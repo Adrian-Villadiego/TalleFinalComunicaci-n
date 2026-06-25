@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+--primary:#0d6efd;
+--secondary:#2563eb;
+--dark:#0f172a;
+--light:#f8fafc;
+--white:#ffffff;
+--gray:#030406;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f8ff;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+/* ==========================
+   NAVBAR PREMIUM
+========================== */
+
+.custom-navbar{
+
+    background: rgba(13,110,253,.85);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    padding: 12px 0;
+
+    transition: .4s;
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+
+}
+
+/* LOGO */
+
+.navbar-brand{
+
+    font-size: 1.6rem;
+
+    font-weight: 700;
+
+    color: white !important;
+
+    transition: .4s;
+
+}
+
+.navbar-brand i{
+
+    margin-right: 8px;
+
+    font-size: 1.5rem;
+
+}
+
+.navbar-brand:hover{
+
+    transform: scale(1.05);
+
+}
+
+/* LINKS */
+
+.nav-link{
+
+    position: relative;
+
+    color: rgba(255,255,255,.9) !important;
+
+    font-weight: 600;
+
+    margin-left: 15px;
+
+    padding: 8px 15px !important;
+
+    border-radius: 50px;
+
+    transition: .4s;
+
+}
+
+/* EFECTO HOVER */
+
+.nav-link:hover{
+
+    color: white !important;
+
+    background: rgba(255,255,255,.15);
+
+    transform: translateY(-3px);
+
+}
+
+/* LINEA ANIMADA */
+
+.nav-link::after{
+
+    content: '';
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 3px;
+
+    background: white;
+
+    border-radius: 50px;
+
+    transition: .4s;
+
+    transform: translateX(-50%);
+
+}
+
+.nav-link:hover::after{
+
+    width: 70%;
+
+}
+
+/* BOTON HAMBURGUESA */
+
+.navbar-toggler{
+
+    border: none;
+
+    box-shadow: none !important;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow: none !important;
+
+}
+
+/* EFECTO SCROLL */
+
+.navbar-scrolled{
+
+    background: rgba(13,110,253,.97);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+}
+
+/* HERO INDEX */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url('../img/fondo5.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:stactic;
+}
+
+.hero h1{
+font-weight:800;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+}
+
+/* HERO APRENDICES */
+
+.hero-aprendiz{
+
+
+min-height:60vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:
+linear-gradient(
+135deg,
+#0d6efd,
+#3b82f6
+);
+
+color:white;
+
+text-align:center;
+
+
+}
+
+.hero-aprendiz i{
+font-size:7rem;
+}
+
+/* TITULOS */
+
+.section-title{
+
+
+font-size:2.2rem;
+
+font-weight:700;
+
+color:var(--primary);
+
+margin-bottom:30px;
+
+text-align:center;
+
+
+}
+
+/* CARDS GENERALES */
+
+.card{
+
+border:none;
+
+border-radius:20px;
+
+transition:.4s;
+
+overflow:hidden;
+
+
+}
+
+.card:hover{
+
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+
+}
+
+/* TARJETA INFO */
+
+.info-card{
+
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info-card i{
+color:var(--primary);
+}
+
+/* BENEFICIOS */
+
+.benefit-card{
+
+background:white;
+
+text-align:center;
+
+padding:20px;
+
+
+}
+
+.benefit-card i{
+
+
+color:var(--primary);
+
+
+}
+
+/* INTEGRANTES */
+
+.integrante-card{
+
+
+background:white;
+
+padding:20px;
+
+text-align:center;
+
+
+}
+
+.integrante-card i{
+
+
+color:var(--primary);
+
+}
+
+/* TARJETAS TEMAS */
+
+.topic-card{
+
+
+height:100%;
+
+text-align:center;
+
+background:white;
+
+
+}
+
+.topic-card i{
+
+
+color:var(--primary);
+
+
+}
+
+.topic-card h5{
+
+
+font-weight:600;
+
+
+}
+
+/* CONTENIDO */
+
+.content-card{
+
+background:white;
+
+padding:15px;
+
+border-radius:20px;
+
+
+}
+
+/* REFLEXION */
+
+.reflection-card{
+
+
+background:
+linear-gradient(
+135deg,
+#dbeafe,
+#eff6ff
+);
+
+border-left:8px solid var(--primary);
+
+
+}
+
+/* BOTONES */
+
+.btn-primary{
+
+
+background:#0d6efd;
+
+border:none;
+
+border-radius:50px;
+
+padding:10px 25px;
+
+
+
+}
+
+.btn-primary:hover{
+
+
+background:#2563eb;
+
+transform:translateY(-3px);
+
+
+}
+
+.btn-light{
+
+
+border-radius:50px;
+
+padding:12px 30px;
+
+font-weight:600;
+
+
+}
+
+/* ACORDEON */
+
+.accordion-item{
+
+border:none;
+
+margin-bottom:10px;
+
+border-radius:15px !important;
+
+overflow:hidden;
+
+
+}
+
+.accordion-button{
+
+
+font-weight:600;
+
+
+}
+
+.accordion-button:not(.collapsed){
+
+
+background:#dbeafe;
+
+color:#0d6efd;
+
+
+}
+
+/* FOOTER */
+.footer{
+
+
+background:#0f172a;
+
+color:white;
+
+padding:70px 0 30px;
+
+margin-top:80px;
+
+
+}
+
+.footer-title{
+
+
+font-weight:700;
+
+margin-bottom:20px;
+
+
+}
+
+.footer-title i{
+
+
+color:#60a5fa;
+
+margin-right:8px;
+
+
+}
+
+.footer-subtitle{
+
+
+margin-bottom:20px;
+
+font-weight:600;
+
+color:#60a5fa;
+
+
+}
+
+.footer-list{
+
+list-style:none;
+
+padding:0;
+
+
+}
+
+.footer-list li{
+
+margin-bottom:12px;
+
+
+}
+
+.footer-list i{
+
+
+color:#60a5fa;
+
+margin-right:8px;
+
+
+}
+
+.footer-line{
+
+
+margin:40px 0;
+
+border-color:rgba(255,255,255,.15);
+
+
+}
+
+.social-icon{
+
+
+width:45px;
+
+height:45px;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+margin-left:10px;
+
+color:white;
+
+text-decoration:none;
+
+transition:.3s;
+
+
+}
+
+.social-icon:hover{
+
+
+background:#2563eb;
+
+transform:translateY(-5px);
+
+color:white;
+
+}
+
+.footer-quote{
+
+
+color:#cbd5e1;
+
+font-style:italic;
+
+font-size:1rem;
+
+
+}
