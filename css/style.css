@@ -108,7 +108,33 @@ overflow-x:hidden;
     transform: translateY(-3px);
 
 }
+.hero-aprendiz{
+    min-height: 90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
 
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("../img/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.foto-perfil{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    margin-bottom:25px;
+}
 /* LINEA ANIMADA */
 
 .nav-link::after{
