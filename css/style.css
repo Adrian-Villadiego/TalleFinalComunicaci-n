@@ -341,13 +341,47 @@ color:var(--primary);
 
 .integrante-card{
 
+    height:100%;
 
-background:white;
+    border:none;
 
-padding:20px;
+    border-radius:25px;
 
-text-align:center;
+    padding:20px;
 
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.integrante-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.integrante-card .card-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:100%;
 
 }
 
@@ -621,5 +655,97 @@ font-style:italic;
 
 font-size:1rem;
 
+
+}
+
+/* Fondo Adrián */
+
+.hero-adrian{
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../img/Fondoo.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+/* Fondo Luis */
+
+.hero-luis{
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../img/fondo-luis.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+/* Fondo Fauricio */
+
+.hero-fauricio{
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../img/fondo-fauricio.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+.foto-integrante{
+
+    width:150px;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #0d6efd;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+    transition:.4s;
+
+}
+
+.foto-integrante:hover{
+
+    transform:scale(1.08);
+
+    border-color:#2563eb;
+
+}
+
+.integrante-card{
+
+    border:none;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.integrante-card .card-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
 
 }
